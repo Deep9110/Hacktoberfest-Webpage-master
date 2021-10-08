@@ -1,0 +1,122 @@
+body{
+	margin: 0;
+	
+}
+header{
+	height: 80px;
+	width: auto;
+	background-color: #5e8dc6;
+}
+header img{
+	float: left;
+	height: 65px;
+	width: 190px;
+	margin-top: 10px;
+	margin-left: 280px;
+}
+label{
+	color: #fff;
+	font-family: Helvetica;
+	font-size: 12px;
+}
+#input1{
+	float: left;
+	margin-top: 14px;
+	margin-left: 430px;
+}
+#input2{
+	float: right;
+	margin-top: 14px;
+	margin-right: 290px;
+}
+#login{
+	background-color: #4267b2;
+	color: #fff;
+
+
+}
+section h1{
+	font-family: Helvetica;
+	font-size: 20px;
+	margin-top: 40px;
+	margin-left: 300px;
+}
+section img{
+	margin-top: 10px;
+	margin-left: 280px;
+}
+#ca{
+	font-family: Helvetica ;
+	font-size: 36px;
+	font-style: bold;
+	float: left;
+	margin-left: 900px;
+	margin-top: -270px;
+}
+section h3{
+	font-family: Helvetica ;
+	font-size: 19px;
+	float: left;
+	margin-left: 900px;
+	margin-top: -220px;
+	font-style: none;	
+}
+
+.fb-body{
+	float: right;
+	margin-right: 255px;
+	margin-top: -180px;
+}
+#namebox{
+	width:200px;
+	height:40px;
+	border-radius:5px 5px 5px 5px;
+	background:white;
+	padding:10px;
+	font-size:18px;
+	margin-top:8px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+}
+#mailbox{
+	width:408px;
+	height:40px;
+	border-radius:5px 5px 5px 5px;
+	background:white;
+	padding:10px;
+	font-size:18px;
+	margin-top:8px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+}
+.button2{
+	width:250px;
+	height:40px;
+	left:750px;
+	top:625px;
+	background:green;
+	font-family:verdana;
+	font-size:18px;
+	color:white;
+	border-radius:5px 5px 5px 5px;
+	border-width: 1px;
+	border-style:solid;
+	border-color: gray;
+	cursor:pointer;
+	outline:none;
+	
+}
+#intro4{
+	font-family:verdana;
+	font-size:12px;
+	color:gray;
+	
+}
+#intro5{
+	font-family:verdana;
+	font-size:14px;
+	color:gray;
+	
+}

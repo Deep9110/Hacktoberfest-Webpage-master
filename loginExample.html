@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inicia Sesión</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0px;
+        font-family: "Muli", sans-serif;
+      }
+
+      .header {
+        background-color: #21c08b;
+        width: 100%;
+        height: 80px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        top: 0px;
+        width: 100%;
+      }
+
+      .header__img {
+        margin-top: 10px;
+        width: 220px;
+        margin-left: 30px;
+      }
+
+      .login {
+        background: linear-gradient(#21c08b, #ab88ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px 30px;
+        min-height: calc(100vh - 200px);
+      }
+
+      .login__container {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 40px;
+        color: white;
+        padding: 60px 68px 40px;
+        min-height: 700px;
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        box-shadow: 0px 0px 20px 0px rgba 0, 0, 0, 0.5;
+      }
+
+      .login__container--form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login__container--form label {
+        font-size: 14px;
+      }
+
+      .login__container--remember-me {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      .login__container--remember-me a {
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      .login__container--remember-me a:hover {
+        text-decoration: underline;
+      }
+
+      .login__container--social-media > div {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .login__container--social-media > div > img {
+        width: 30px;
+        margin-right: 10px;
+      }
+
+      .login__container--register {
+        font-size: 14px;
+      }
+
+      .login__container--register a {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+      }
+
+      .login__container--register a:hover {
+        text-decoration: underline;
+      }
+
+      .input {
+        background-color: transparent;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        border-bottom: 2px solid white;
+        font-family: "Muli", sans-serif;
+        outline: none;
+        font-size: 16px;
+        margin-bottom: 20px;
+        padding: 0px 10px;
+        height: 50px;
+        color: white;
+      }
+
+      ::placeholder {
+        color: white;
+      }
+
+      .button {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 25px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Muli", sans-serif;
+        height: 50px;
+        letter-spacing: 1px;
+        outline: none;
+        margin: 10px 0px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: #ab88ff;
+      }
+
+      .footer a {
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 30px;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .login__container {
+          background-color: transparent;
+          border: none;
+          padding: 0px;
+        }
+
+        .footer {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        tabindex="0"
+        class="header__img"
+        src="https://i.imgur.com/roew3GK.png"
+        alt="Logo"
+      />
+    </header>
+    <section class="login">
+      <section class="login__container">
+        <h2 tabindex="0">Log In</h2>
+        <form class="login__container--form" action="">
+          <input
+            aria-label="email"
+            class="input"
+            type="text"
+            placeholder="Email"
+          />
+          <input
+            aria-label="password"
+            class="input"
+            type="password"
+            placeholder="Password"
+          />
+          <button class="button">Log in</button>
+          <div class="login__container--remember-me">
+            <label>
+              <input type="checkbox" id="cbox1" value="checkbox" />Remember me
+            </label>
+            <a href="/">I forgot my password</a>
+          </div>
+        </form>
+        <section class="login__container--social-media">
+          <div>
+            <img src="https://i.imgur.com/VSaGWvM.png" alt="Google" />Log in
+            with Google
+          </div>
+          <div>
+            <img src="https://i.imgur.com/TldeQT1.png" alt="Twitter" />Log in
+            with Twitter
+          </div>
+        </section>
+        <p class="login__container--register">
+          Join today! <a href="/">Sign Up</a>
+        </p>
+      </section>
+    </section>
+    <footer class="footer">
+      <a href="/">Terms of use</a>
+      <a href="/">Privacy</a>
+      <a href="/">Help center</a>
+    </footer>
+  </body>
+</html>

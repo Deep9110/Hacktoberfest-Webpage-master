@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Example</title>
+	<script src="myscripts.js"></script>
+</head>
+<body bgcolor="#CCFF66">
+	<form action="sample.html" method="" name="myform" onsubmit="return validate();">
+		<h3 style="color:#F00">Personal Details</h3>
+		First Name:
+		<input type="text" name="name" id="fname"><br /><br />
+		Last Name:
+		<input type="text" name="name" id="lname"><br /><br />
+		Password:
+		<input type="password" name="password" id="password"><br /><br />
+
+		E-mail id: <input type="text" name="name" id="name"><br /><br />
+		Gender: <input type="radio" name="radiogroup1" value="radio" id="radiogroup1"> Male
+		<input type="radio" name="radiogroup1" value="radio" id="radiogroup2"> Female<br /><br />
+		Contact#: <input type="text" name="mobile" id="cno">
+
+		<h3 style="color:#F00">Educational Qualification</h3>
+
+		Degree: <select name="degree" id="degree">
+			<option selected>-- Select Group --</option>
+			<option>B.Tech</option>
+			<option>M.Tech</option>
+		</select><br />
+		<br />
+		Engineering: <select name="eng" id="eng">
+			<option selected>-- Select Group --</option>
+			<option>CSE</option>
+			<option>IT</option>
+			<option>CIVIL</option>
+		</select><br /><br />
+		Hobbies: <input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">Playing chess
+		<input type="checkbox" name="CheckboxGroup1" value="checkbox" id="CheckboxGroup1">Reading Books<br /><br />
+		<h3 style="color:#F00">Address</h3>
+		<textarea name="textarea" cols="35" rows="5" id="textarea"></textarea><br />
+		<br />
+		Attch Resume: <input type="file" name="fileField" id="fileField"><br /><br />
+
+		<input type="image" src="/images/submit_btn.png">
+	</form>
+</body>
+</html>

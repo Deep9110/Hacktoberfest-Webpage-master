@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>Strength Password</title>
+    <script>
+        function validateUser()
+        {
+            var cpass=document.getElementById('cpass').value
+            if(spass.match(cpass))
+            {
+                document.getElementById('p2').innerHTML=''
+            }
+            else
+            {
+                document.getElementById('p2').innerHTML='PASSWORD NOT MATCHED'
+                return false;
+            }
+        }
+        function sPass()
+        {
+            var spass=document.getElementById('pass').value
+            var weak=/^[A-Za-z0-9!@#$%^&*]{3,}$/
+            var medium=/^(?=.*[0-9])[A-Za-z0-9!@#$%^&*]{5,}$/
+            var strong=/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}$/
+
+            if(strong.test(valspass))
+            {
+                spass.style.backgroundColor='green'
+                document.getElementById('p1').innerHTML='Your Password Strength = Strong'
+
+            }
+            else if(medium.test(valspass))
+            {
+                spass.style.backgroundColor='yellow'
+                document.getElementById('p1').innerHTML='Your Password Strength = Medium'
+
+            }
+            else
+            {
+                spass.style.backgroundColor='red'
+                document.getElementById('p1').innerHTML='Your Password Strength = Weak'
+
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <form>
+    <input type="password" id="pass" placeholder="Enter Password" onkeyup="sPass()"></br>
+    <p id="p1"></p></br>
+    
+    <input type="password" id="cpass" placeholder="Confirm Password"> </br>
+    <p id="p2"></p></br>
+
+    <input type="submit" value="submit" onclick="validateUser()"></br>
+</form>
+
+</body>
+
+</html>

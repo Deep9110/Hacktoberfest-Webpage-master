@@ -1,0 +1,379 @@
+<!-- Created by Subhadeep Mandal -->
+<!DOCTYPE html lang="en">
+<html>
+<head>
+	<meta name="description" content="Blood Donation">
+	<meta name="keywords" content="Blood Donation, Your Locality, Donate Today">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Blood Donation</title>
+    <style>
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+    	body {
+    	  background-image: linear-gradient(180deg, indianred, lavender);
+    	  background-repeat: no-repeat;
+    	  background-attachment: fixed;
+    	  background-size: cover;
+    	}
+
+    	h1 {
+    		text-align: center;
+    		color: midnightblue;
+    		text-shadow:1px 1px 1px violet;
+    		font-family: Comic Sans, cursive;
+    		font-size: xxx-large;
+    		margin: 1px;
+    	}
+
+      h2 {
+        margin-top: -0.5%;
+        text-align: center;
+        color: crimson;
+        text-shadow: 2px 2px 2px black;
+        font-family: Comic Sans, cursive;
+      }
+
+      h3 {
+        color: orangered;
+        text-shadow: 2px 2px 1px black;
+        font-family: Comic Sans, cursive;
+        margin-left: 5%;
+      }
+
+      p{
+        margin-left: 3%;
+        font-family: Comic Sans, cursive;
+        color: lavender;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+        font-family: Comic Sans, cursive;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 85px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+
+      li a:active {
+        background-color: green;
+      }
+
+      a {
+        display: inline;
+        color: tomato;
+      }
+
+    	#primarybox {
+      	background-color: black;
+      	opacity: 0.8;
+      	width: 95%;
+      	margin: 0 auto;			/* horizontally centreing an element  */
+      	border-radius: 15px;
+      	padding: 5px;
+      	border-style: double;
+      	border-color: violet;
+    	}
+
+      .flexable {
+        display: flex;
+        margin-top: 1%;
+        margin-left: 3%;
+      }
+
+      .bluebox {
+        border: 5px double gray;
+        border-radius: 10px;
+        background-color: #193c59;
+        font-family: Comic Sans, cursive;
+        color: lavender;
+      }
+
+      #donorPanel {
+        width: 69.5%;
+        height: 39%;
+      }
+
+      iframe {
+        width: 340px;
+        height: 190px;
+        margin-left: 1%;
+        border: 5px double gray;
+        border-radius: 10px;
+      }
+
+      .names {
+        padding-right: 2%;
+        padding-left: 15%;
+        font-size: x-large;
+        text-shadow:5px 5px 2px black;
+      }
+
+      option {
+        font-family: Comic Sans, cursive;
+        font-size: medium;
+      }
+
+      select {
+        font-family: Comic Sans, cursive;
+        font-size: medium;
+        border-radius: 10px;
+      }
+
+      input {
+        font-family: Comic Sans, cursive;
+        border-radius: 10px;
+      }
+
+      input[type=submit] {
+        margin-top: 5px;
+        background-color: green;
+        padding: 2px 15px;
+        font-size: large;
+        font-weight: bold;
+        color: azure;
+        text-shadow:3px 3px 2px black;
+      }
+
+      #standAlonePanel {
+        margin-top: 0.5%;
+        margin-left: 3%;
+        margin-right: 3%;
+      }
+  </style>
+</head>
+<body>
+	<h1>Blood Donation</h1>
+	<article id = "primarybox">
+		<p>Blood Donation Commission</p>
+    <p>A Social Initiative</p>
+    <nav>
+      <ul>
+        <li><a href="#portion1">Register</a></li>
+        <li><a href="#portion1">Why Donate Blood</a></li>
+        <li><a href="#portion1">Who can Give Blood</a></li>
+        <li><a href="#portion1">Refer a Friend</a></li>
+        <li><a href="#portion1">Contact us</a></li>
+      </ul>
+    </nav>
+    <div>
+    <aside class="flexable">
+        <form class="bluebox" id="donorPanel" action="">
+          <h2>Find a Donor</h2>
+          <label class="names" for="state">State</label>
+              <select name="state" id="state">
+              <option value= "Andhra Pradesh">Andhra Pradesh</option>
+              <option value= "Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value= "Assam">Assam</option>
+              <option value= "Bihar">Bihar</option>
+              <option value= "Chhattisgarh">Chhattisgarh</option>
+              <option value= "Goa">Goa</option>
+              <option value= "Gujarat">Gujarat</option>
+              <option value= "Haryana">Haryana</option>
+              <option value= "Himachal Pradesh">Himachal Pradesh</option>
+              <option value= "Jharkhand">Jharkhand</option>
+              <option value= "Karnataka">Karnataka</option>
+              <option value= "Kerala">Kerala</option>
+              <option value= "Madhya Pradesh">Madhya Pradesh</option>
+              <option value= "Maharashtra">Maharashtra</option>
+              <option value= "Manipur">Manipur</option>
+              <option value= "Meghalaya">Meghalaya</option>
+              <option value= "Mizoram">Mizoram</option>
+              <option value= "Nagaland">Nagaland</option>
+              <option value= "Odisha">Odisha</option>
+              <option value= "Punjab">Punjab</option>
+              <option value= "Rajasthan">Rajasthan</option>
+              <option value= "Sikkim">Sikkim</option>
+              <option value= "Tamil Nadu">Tamil Nadu</option>
+              <option value= "Telangana">Telangana</option>
+              <option value= "Tripura">Tripura</option>
+              <option value= "Uttarakhand">Uttarakhand</option>
+              <option value= "Uttar Pradesh">Uttar Pradesh</option>
+              <option value= "West Bengal">West Bengal</option>
+            </select>
+            <label class="names" for="city">City</label>
+              <select name="city" id="city">
+              <option value= "Amaravati">Amaravati</option>
+              <option value= "Itanagar">Itanagar</option>
+              <option value= "Dispur">Dispur</option>
+              <option value= "Patna">Patna</option>
+              <option value= "Raipur">Raipur</option>
+              <option value= "Panaji">Panaji</option>
+              <option value= "Gandhinagar">Gandhinagar</option>
+              <option value= "Chandigarh">Chandigarh</option>
+              <option value= "Shimla">Shimla</option>
+              <option value= "Ranchi">Ranchi</option>
+              <option value= "Bangalore">Bangalore</option>
+              <option value= "Thiruvananthapuram">Thiruvananthapuram</option>
+              <option value= "Bhopal">Bhopal</option>
+              <option value= "Mumbai">Mumbai</option>
+              <option value= "Imphal">Imphal</option>
+              <option value= "Shillong">Shillong</option>
+              <option value= "Aizawl">Aizawl</option>
+              <option value= "Kohima">Kohima</option>
+              <option value= "Bhubaneshwar">Bhubaneshwar</option>
+              <option value= "Chandigarh">Chandigarh</option>
+              <option value= "Jaipur">Jaipur</option>
+              <option value= "Gangtok">Gangtok</option>
+              <option value= "Chennai">Chennai</option>
+              <option value= "Hyderabad">Hyderabad</option>
+              <option value= "Agartala">Agartala</option>
+              <option value= "Dehradun">Dehradun</option>
+              <option value= "Lucknow">Lucknow</option>
+              <option value= "Kolkata">Kolkata</option>
+              </select>
+              <label class="names" for="area">Area </label>
+              <select name="area" id="area">
+              <option value= "Block_AA">Block AA</option>
+              <option value= "Block_AB">Block AB</option>
+              <option value= "Block_AC">Block AC</option>
+              <option value= "Block_AD">Block AD</option>
+              <option value= "Block_BB">Block BB</option>
+              <option value= "Block_BC">Block BC</option>
+              <option value= "Block_BD">Block BD</option>
+              <option value= "Block_DL">Block DL</option>
+              <option value= "Block_ED">Block ED</option>
+              <option value= "Block_EE">Block EE</option>
+              <option value= "Purvanchal Block">Purvanchal Block</option>
+              <option value= "Uttaranchal Block">Uttaranchal Block</option>
+            </select>
+            <label class="names" for="group">Group</label>
+              <select name="group" id="group">
+              <option value= "A+">A+</option>
+              <option value= "A">A</option>
+              <option value= "A-">A-</option>
+              <option value= "B+">B+</option>
+              <option value= "B">B</option>
+              <option value= "B-">B-</option>
+              <option value= "O+">O+</option>
+              <option value= "O">O</option>
+              <option value= "O-">O-</option>
+              <option value= "AB+">AB+</option>
+              <option value= "AB">AB</option>
+              <option value= "AB-">AB-</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Search" style="margin: 1% 45%;" onclick="alert('Response Recorded');">
+        </form>
+      <iframe src="https://www.youtube.com/embed/Af0gk_kiGac?playlist=Af0gk_kiGac&loop=1&autoplay=1&mute=1&controls=0" allowfullscreen></iframe>
+    </aside>
+    <div class="bluebox" id="standAlonePanel" style="margin-top: -0.5%;">
+      <h2>Donation Process</h2>
+      <p>
+        A phlebotomist will clean your arm and insert a new, sterile needle into your vein. This takes just a few seconds, and it can feel like a quick pinch. You'll donate about 1 pint (one unit) of blood. The process should take less than 10 minutes. <a href="https://wb.md/3egSxcd">More info</a>
+      </p>
+    </div>
+    <div class="bluebox" id="standAlonePanel">
+      <h3>Where would you like to Donate?</h3>
+      <form action="">
+          <select name="Location" id="Location" style="margin-left: 5%;">
+            <option value= "spot1">Organ Blood Collection Center</option>
+            <option value= "spot2">Jnm Blood Bank</option>
+            <option value= "spot3">Base Hospital Blood Bank Barrackpore</option>
+            <option value= "spot4">Central Blood Bank</option>
+            <option value= "spot5">S. R. N. Blood Collection Centre</option>
+            <option value= "spot6">Lions Blood Bank</option>
+            <option value= "spot7">Association Of Voluntary Blood Donors</option>
+          </select>
+          <input type="submit" value="Search" style="margin: 1%;" onclick="alert('Response Recorded');">
+      </form>
+    </div>
+  </div>
+  <div id="portion1" style="margin-top: 3%">
+    <div class="flexable">
+        <div class="bluebox" id="standAlonePanel" style="width: 17%;text-align: center;">
+          <h2>Register</h2>
+          <form action="">
+              <label for="fname"><b>First name :</b></label><br>
+              <input type="text" id="fname" name="fname" value="Siddartha"><br><br>
+              <label for="lname"><b>Last name :</b></label><br>
+              <input type="text" id="lname" name="lname" value="Routhou"><br><br>
+              <label for="email"><b>Email :</b></label><br>
+              <input type="text" id="email" name="email" value="sid007@hotmail.com"><br><br>
+              <label for="address"><b>Address :</b></label><br>
+              <input type="text" id="address" name="address" value="sigma Lane,Kolkata...."><br><br>
+              <label for="bloodType"><b>BloodGroup :</b></label><br>
+              <input type="text" id="bloodType" name="bloodType" value="O+"><br><br>
+              <label for="sex"><b>Sex :</b></label><br>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">Male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label><br>
+              <input type="submit" value="submit" onclick="alert('Response Recorded');">
+          </form>
+        </div>    <!-- For Register -->
+
+        <div class="bluebox" id="standAlonePanel" style="width: 35%;text-align: center;">
+          <br>
+          <h2>Why Donate Blood</h2>
+          <p>
+            Blood is the most precious gift that anyone can give to another person — the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components — red cells, platelets and plasma — which can be used individually for patients with specific conditions.
+            <br><br><a href="https://bit.ly/3eh7Bqh">More info</a>
+          </p>
+          <h2>Who can Give Blood</h2>
+          <ol>
+              <li>You are aged between 18 and 65.</li>
+              <li>You weigh at least 50 kg.</li>
+              <li>You don't have any diseases like malaria, dengue, Zika or any STD (AIDS etc)</li>
+              <li>You are not pregnant or breastfeeding</li>
+              <li>You are in good health</li>
+          </ol>
+          <br><br><br><br><br><br><a href="https://bit.ly/3eg0KNs">More info</a>
+        </div>      <!-- For 2 gyan panels -->
+
+        <div class="bluebox" id="standAlonePanel" style="width: 25%;text-align: center;">
+          <br>
+          <h2>Refer a Friend</h2>
+          <p> Spread the word <br>
+            <a href="whatsapp://send?text=Donate Blood Today" data-action="share/whatsapp/share"target="_blank">WhatsApp </a><br>
+            <a href="https://www.facebook.com">Facebook</a><br>
+            <a href="https://www.twitter.com">Twitter</a><br>
+            <a href="https://www.instagram.com">Instagram</a>
+          </p>
+          <h2>Contact Us</h2>
+          <p>
+            <a href="mailto:shreetejphule@gmail.com">Email</a><br>
+            <a href="tel:+918698519100">Call us</a><br>
+            <a href="https://www.instagram.com/_shreee.p">Insta</a><br>
+            <a href="https://twitter.com/ultrasubha">Twitter</a>
+          </p>
+          <hr>
+          <h2><i>Status</i></h2>
+          <p><b><i>1256</i></b> applicants willing to donate blood and <b><i>23</i></b> Blood Banks from various cities involved.
+        </div>      <!-- For Refer and Contacts -->
+    </div>        <!-- For Flex -->
+  </div>           <!-- For portion1 -->
+    <footer>
+      <p><a href="mailto:shreetejphule@gmail.com">Give Feedback</a></p>
+  </footer>
+	</article>
+  <!--
+  <footer>
+    <a href="mailto:someone@example.com">Send email</a>
+    <a href="tel:+4733378901">Call us</a>
+  </footer>
+  -->
+</body>
+</html>

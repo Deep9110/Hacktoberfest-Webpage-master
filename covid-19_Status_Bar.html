@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<style>
+		table {
+			width: 100%;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th,
+		td {
+			padding: 15px;
+			text-align: left;
+		}
+
+		table#t01 tr:nth-child(even) {
+			background-color: #eee;
+		}
+
+		table#t01 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+
+		table#t01 th {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="text-block">
+		<h4>Covid-19 Status Of Sikkim</h4>
+		<p>SIKKIM COVID-19 CENTRALIZED INFORMATION SYSTEM</p>
+	</div>
+
+	<div id="piechart"></div>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<script type="text/javascript">
+		// Load google charts
+		google.charts.load('current', {
+			'packages': ['corechart']
+		});
+		google.charts.setOnLoadCallback(drawChart);
+
+		// Draw the chart and set the chart values
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				['case', 'Person'],
+				['Confirmed', 68],
+				['Active', 68],
+				['Recovered', 5],
+				['Deceased', 0]
+			]);
+
+			// Optional; add a title and set the width and height of the chart
+			var options = {
+				'title': 'TOTAL CASE',
+				'width': 550,
+				'height': 400
+			};
+
+			// Display the chart inside the <div> element with id="piechart"
+			var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+			chart.draw(data, options);
+		}
+	</script>
+	<h1>SIKKIM COVID-19</h1>
+	<h>QUARANTINE INFORMTION</h>
+	<table id="t01">
+		<thead>
+			<tr>
+				<th>Name of Quarantine Center</th>
+				<th>New Person</th>
+				<th>Cumulative</th>
+				<th>Discharged</th>
+				<th>At Present</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Jorthang</td>
+				<td>ABCD</td>
+				<td>50</td>
+				<td>50</td>
+				<td>50</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Facto</title>
+	<style>
+		body {
+			background-color: green;
+		}
+
+		h2 {
+			color: white;
+			background-color: gray;
+			text-align: center;
+		}
+
+		p {
+			color: magenta;
+			font-size: x-large;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Program to calculate the factorial of a number</h2>
+	<script>
+		var value = 1,
+			i = 0,
+			number = 4;
+		for (i = 1; i <= number; i++) {
+			value = value * i;
+		}
+		var str = "<p><b>The factorial of " + number + " is  :  </b>" + value + "<br /></p>"; document.write(str);
+	</script>
+</body>
+</html>
